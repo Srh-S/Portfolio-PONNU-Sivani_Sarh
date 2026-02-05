@@ -19,38 +19,26 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+      <div class="accessibility-tools">
+        <button
+          id="increase-font"
+          title="Agrandir le texte"
+          aria-label="Agrandir le texte"
+        >
+          [A+]
+        </button>
+        <button
+          id="reset-font"
+          title="Réinitialiser"
+          aria-label="Réinitialiser la taille"
+        >
+          [Reset]
+        </button>
+      </div>
     </header>
 
     <main>
       <h1>Projets académiques et techniques</h1>
-
-      <!-- SAE21 -->
-      <section id="sae21" class="project-card">
-        <h2>SAE21 – Construction d’un réseau informatique complet</h2>
-        <p>
-          Conception et déploiement d’un réseau destiné à une PME, intégrant
-          routage, services réseau et accès Internet.
-        </p>
-        <ul>
-          <li>Configuration de routeurs et switchs Cisco (CLI IOS)</li>
-          <li>Routage statique et dynamique (OSPF, RIPv2)</li>
-          <li>Mise en place de DHCP et NAT/PAT</li>
-        </ul>
-        <p>
-          <strong>Technologies :</strong> Cisco Packet Tracer, Cisco IOS, OSPF,
-          RIPv2, DHCP, NAT/PAT
-        </p>
-        <p class="project-link">
-          🔗
-          <a href="competence.html#reseaux"><span class="tag">Réseaux</span></a
-          >, <a href="competence.html#linux"><span class="tag">Linux</span></a
-          >, <a href="competence.html#pbx"><span class="tag">PABX/IPBX</span></a
-          >,
-          <a href="competence.html#transmission"
-            ><span class="tag">Transmission</span></a
-          >
-        </p>
-      </section>
 
       <!-- MITM -->
       <section id="mitm" class="project-card">
@@ -80,25 +68,30 @@
         </p>
       </section>
 
-      <!-- Automatisation CSV -->
-      <section id="data-processing" class="project-card">
-        <h2>Automatisation du traitement de données CSV</h2>
+      <!-- SAE21 -->
+      <section id="sae21" class="project-card">
+        <h2>SAE21 – Construction d’un réseau informatique complet</h2>
         <p>
-          Développement d’un outil Python pour analyser, nettoyer et exploiter
-          des jeux de données volumineux.
+          Conception et déploiement d’un réseau destiné à une PME, intégrant
+          routage, services réseau et accès Internet.
         </p>
         <ul>
-          <li>Traitement de fichiers CSV</li>
-          <li>Analyse et structuration des données</li>
-          <li>Génération de rapports exploitables</li>
+          <li>Configuration de routeurs et switchs Cisco (CLI IOS)</li>
+          <li>Routage statique et dynamique (OSPF, RIPv2)</li>
+          <li>Mise en place de DHCP et NAT/PAT</li>
         </ul>
-        <p><strong>Technologies :</strong> Python, Pandas, CSV, PostgreSQL</p>
+        <p>
+          <strong>Technologies :</strong> Cisco Packet Tracer, Cisco IOS, OSPF,
+          RIPv2, DHCP, NAT/PAT
+        </p>
         <p class="project-link">
-          🔗 <a href="competence.html#dev"><span class="tag">Python</span></a
-          >, <a href="competence.html#sql"><span class="tag">SQL</span></a
+          🔗
+          <a href="competence.html#reseaux"><span class="tag">Réseaux</span></a
+          >, <a href="competence.html#linux"><span class="tag">Linux</span></a
+          >, <a href="competence.html#pbx"><span class="tag">PABX/IPBX</span></a
           >,
-          <a href="competence.html#bdd"
-            ><span class="tag">Bases de données</span></a
+          <a href="competence.html#transmission"
+            ><span class="tag">Transmission</span></a
           >
         </p>
       </section>
@@ -130,6 +123,61 @@
         </p>
       </section>
 
+      <section id="voip-security" class="project-card">
+        <h2>
+          Déploiement de Services de Communication Unifiée et Sécurisation
+          (Wazuh)
+        </h2>
+        <p>
+          Ce projet allie infrastructure réseaux et sécurité informatique via la
+          mise en place d'une architecture VoIP et sa protection active.
+        </p>
+
+        <div class="project-details">
+          <h3>Aperçu du projet</h3>
+          <p>Le projet s'est articulé autour de deux phases majeures :</p>
+          <ul>
+            <li>
+              <strong>Phase Infrastructure :</strong> Installation d'un serveur
+              Asterisk sous Debian, configuration de softphones (Linphone) et de
+              téléphones IP physiques pour la gestion des services finance et
+              comptabilité.
+            </li>
+            <li>
+              <strong>Phase Sécurité :</strong> Implémentation de Wazuh pour le
+              monitoring d'intégrité du système et l'analyse de journaux en
+              temps réel.
+            </li>
+            <li>
+              <strong>Analyse de vulnérabilités :</strong> Identification de
+              flux compromis via Wireshark et simulation d'attaques par
+              empoisonnement de table ARP (MITM).
+            </li>
+          </ul>
+        </div>
+
+        <p>
+          <strong>Technologies et Outils :</strong> Asterisk (Debian), Wazuh &
+          Agent Wazuh, Wireshark, Switch Cisco, Linphone, Ubuntu, Virtualisation
+          (VM).
+        </p>
+
+        <p class="project-link">
+          🔗
+          <a href="Présentation SAE Assurer.pdf">Présentation du projet</a>
+          🔗
+          <a href="competence.html#telecoms"
+            ><span class="tag">VoIP / PABX</span></a
+          >,
+          <a href="competence.html#securite"
+            ><span class="tag">Cybersécurité (Wazuh)</span></a
+          >,
+          <a href="competence.html#reseaux"
+            ><span class="tag">Administration Linux</span></a
+          >
+        </p>
+      </section>
+
       <!-- Portfolio -->
       <section id="portfolio" class="project-card">
         <h2>Création de ce portfolio web</h2>
@@ -157,5 +205,6 @@
       <p>© 2025-2026 – PONNU Sivani Sarah</p>
       <p>BUT Réseaux & Télécommunications – Cybersécurité</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

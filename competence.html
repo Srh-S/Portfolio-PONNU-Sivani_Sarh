@@ -19,19 +19,39 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+      <div class="accessibility-tools">
+        <button
+          id="increase-font"
+          title="Agrandir le texte"
+          aria-label="Agrandir le texte"
+        >
+          [A+]
+        </button>
+        <button
+          id="reset-font"
+          title="Réinitialiser"
+          aria-label="Réinitialiser la taille"
+        >
+          [Reset]
+        </button>
+      </div>
     </header>
 
     <main>
       <h1>Compétences techniques</h1>
 
-      <!-- Réseaux -->
       <section id="reseaux">
         <h2>Administrer les réseaux et l’Internet</h2>
         <ul>
-          <li id="linux">Administration de systèmes Linux</li>
+          <li id="linux">Administration de systèmes Linux & Windows</li>
           <li id="protocoles">
             Gestion et configuration des protocoles réseau : DHCP, SSH, NFS,
-            DNS, TCP/IP, modèle OSI
+            DNS, TCP/IP (IPv4/IPv6), modèle OSI
+          </li>
+          <li>Administration de réseaux LAN et multisites</li>
+          <li>
+            Configuration d’équipements actifs : Routeurs et Switchs
+            <strong>Cisco</strong>
           </li>
         </ul>
         <p class="project-link">
@@ -39,52 +59,69 @@
         </p>
       </section>
 
-      <!-- Télécoms -->
       <section id="telecoms">
         <h2>Connecter les entreprises et les usagers</h2>
         <ul>
-          <li id="pbx">Configuration et administration de PABX / IPBX</li>
-          <li id="transmission">
-            Connaissance des systèmes de transmission : radio (AM/FM), câble
-            coaxial, cuivre
-          </li>
+          <li>Téléphonie d’entreprise (VoIP) et services avancés</li>
+          <li>Systèmes de transmission numérique (Radio, Cuivre, Fibre)</li>
+          <li>Configuration et gestion de systèmes PABX/IPBX (Asterisk)</li>
         </ul>
         <p class="project-link">
-          🔗 <a href="projets.html#sae21">Projet associé : SAE21</a>
+          🔗 <a href="projets.html#sae21">Projet associé : SAE21</a><br />
+          🔗
+          <a href="projets.html#voip-security">Projet associé : VoIP & Wazuh</a>
         </p>
       </section>
 
-      <!-- Dev -->
       <section id="dev">
         <h2>Créer des outils et applications pour les R&T</h2>
         <ul>
-          <li id="python">Programmation en Python</li>
-          <li id="web">Développement web : HTML, CSS, PHP</li>
-          <li id="sql">Bases de données relationnelles : SQL (PostgreSQL)</li>
-        </ul>
-        <p class="project-link">
-          🔗 <a href="projets.html#mitm">Projet associé : MITM</a><br />
-          🔗
-          <a href="projets.html#data-processing"
-            >Projet associé : Automatisation CSV</a
-          >
-        </p>
-      </section>
-
-      <!-- Sécurité -->
-      <section id="securite">
-        <h2>Sécuriser un système d’information</h2>
-        <ul>
-          <li id="iptables">Mise en place de pare-feu avec iptables</li>
-          <li id="arp-dhcp">
-            Sécurisation des réseaux locaux : ARP Inspection, DHCP Snooping
+          <li id="python">
+            Programmation en <strong>Python</strong> et scripts
+            <strong>Bash</strong>
+          </li>
+          <li>Automatisation et création d’outils de traitement de données</li>
+          <li id="web">Développement web : HTML, CSS, JavaScript</li>
+          <li id="sql">
+            Bases de données : SQL (PostgreSQL, <strong>MariaDB</strong>)
+          </li>
+          <li>
+            Gestion de version avec <strong>GitHub</strong> et IDE
+            <strong>VS Code</strong>
           </li>
         </ul>
         <p class="project-link">
-          🔗 <a href="projets.html#mitm">Projet associé : MITM</a><br />
+          🔗 <a href="projets.html#mitm">Projet associé : MITM</a>
+        </p>
+      </section>
+
+      <section id="securite">
+        <h2>Sécuriser un système d’information</h2>
+        <ul>
+          <li>
+            Surveillance et administration d’un SI sécurisé
+            (<strong>Wazuh</strong>)
+          </li>
+          <li>Analyse de flux et cryptographie (<strong>Wireshark</strong>)</li>
+          <li>
+            Mise en place de pare-feu : iptables et <strong>Stormshield</strong>
+          </li>
+          <li>
+            Sécurisation des réseaux locaux et services
+            (<strong>FreeRadius</strong>)
+          </li>
+          <li>Hygiène informatique et bases de <strong>Pentest</strong></li>
+        </ul>
+        <p class="project-link">
           🔗
           <a href="projets.html#virtual-network"
             >Projet associé : Réseau virtuel sécurisé</a
+          ><br />
+          🔗
+          <a href="projets.html#mitm">Projet associé : MITM</a><br />
+          🔗
+          <a href="projets.html#voip-security"
+            >Projet associé : Monitoring Wazuh</a
           >
         </p>
       </section>
@@ -94,5 +131,6 @@
       <p>© 2025-2026 – PONNU Sivani Sarah</p>
       <p>BUT Réseaux & Télécommunications – Cybersécurité</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

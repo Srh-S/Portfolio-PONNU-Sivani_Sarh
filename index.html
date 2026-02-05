@@ -3,10 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PONNU Sivani Sarah – Portfolio</title>
+    <title>PONNU Sivani Sarah – Portfolio Cybersécurité</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-
   <body>
     <header>
       <nav aria-label="Navigation principale">
@@ -19,48 +18,69 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+      <div class="accessibility-tools">
+        <button
+          id="increase-font"
+          title="Agrandir le texte"
+          aria-label="Agrandir le texte"
+        >
+          [A+]
+        </button>
+        <button
+          id="reset-font"
+          title="Réinitialiser"
+          aria-label="Réinitialiser la taille"
+        >
+          [Reset]
+        </button>
+      </div>
     </header>
 
     <main>
-      <!-- Présentation principale -->
       <section class="profile-summary">
         <h1>PONNU Sivani Sarah</h1>
-
         <p class="subtitle">
-          Étudiante en BUT Réseaux & Télécommunications – spécialité
+          Étudiante en BUT Réseaux & Télécommunications – Spécialité
           Cybersécurité
         </p>
 
-        <p class="terminal-prompt">> Bienvenue dans mon portfolio!</p>
+        <p class="terminal-prompt" id="terminal-text">
+          > Initialisation du système...
+        </p>
 
         <p class="pitch">
           Passionnée par la <strong>cybersécurité</strong> et les
-          <strong>infrastructures réseau</strong>, je suis actuellement à la
-          recherche d’un <strong>stage de 14 semaines</strong> à partir de
+          <strong>infrastructures réseau</strong>, je recherche un
+          <strong>stage de 14 semaines</strong> à partir de
           <strong>mars 2026</strong>.
         </p>
 
         <div class="cta-buttons">
-          <a href="projets.html" class="btn">Voir mes projets</a>
-          <a href="contact.html" class="btn secondary">Me contacter</a>
+          <a href="projets.html" class="btn">Explorer mes projets</a>
+          <a
+            href="Cv_PONNU_Sivani_Sarah.pdf.pdf"
+            target="_blank"
+            class="btn secondary"
+            >Consulter mon CV</a
+          >
         </div>
       </section>
 
-      <!-- Complément de profil -->
       <section class="about">
         <h2>Profil complémentaire</h2>
-
         <p>
-          Mon profil est enrichi par des compétences en
-          <strong>création numérique</strong> (montage vidéo, dessin, musique),
-          qui développent ma rigueur, ma créativité et mon sens du détail.
+          Au-delà de la technique, je cultive une grande rigueur et créativité à
+          travers le
+          <strong>montage vidéo</strong> et le <strong>dessin</strong>, des
+          atouts précieux pour la vulgarisation technique et la conception de
+          solutions innovantes.
         </p>
       </section>
     </main>
 
     <footer>
-      <p>© 2025-2026 – PONNU Sivani Sarah</p>
-      <p>BUT Réseaux & Télécommunications – Cybersécurité</p>
+      <p>© 2025-2026 – PONNU Sivani Sarah | Portfolio Terminal-Style</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
