@@ -10,15 +10,78 @@
   <body>
     <header>
       <nav aria-label="Navigation principale">
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="apropos.html">À propos</a></li>
-          <li><a href="infos.html">Informations</a></li>
-          <li><a href="competence.html" class="active">Compétences</a></li>
-          <li><a href="projets.html">Projets</a></li>
-          <li><a href="contact.html">Contact</a></li>
+        <ul class="nav-links">
+          <li class="dropdown">
+            <a href="index.html">Accueil</a>
+            <ul class="dropdown-menu">
+              <li><a href="index.html#profil">Profil complémentaire</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="apropos.html">À propos</a>
+            <ul class="dropdown-menu">
+              <li><a href="apropos.html#presentation">À propos de moi</a></li>
+              <li>
+                <a href="apropos.html#objectif">Objectif professionnel</a>
+              </li>
+              <li>
+                <a href="apropos.html#experience">Expérience professionnelle</a>
+              </li>
+              <li><a href="apropos.html#formation">Formation</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="infos.html">Informations</a>
+            <ul class="dropdown-menu">
+              <li><a href="infos.html#langues">Langues</a></li>
+              <li><a href="infos.html#interets">Centres d’intérêt</a></li>
+              <li>
+                <a href="infos.html#qualites">Qualités professionnelles</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="competence.html">Compétences</a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="competence.html#reseaux">Administrer les réseaux</a>
+              </li>
+              <li>
+                <a href="competence.html#telecoms">Connecter les entreprises</a>
+              </li>
+              <li><a href="competence.html#dev">Créer des outils</a></li>
+              <li><a href="competence.html#securite">Sécuriser un SI</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="projets.html">Projets</a>
+            <ul class="dropdown-menu">
+              <li><a href="projets.html#mitm">Attaque MITM</a></li>
+              <li><a href="projets.html#sae21">SAE21 - Réseau complet</a></li>
+              <li>
+                <a href="projets.html#virtual-network"
+                  >Réseau virtuel & iptables</a
+                >
+              </li>
+              <li><a href="projets.html#wazuh">Monitoring Wazuh</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="contact.html">Contact</a>
+            <ul class="dropdown-menu">
+              <li><a href="contact.html#email">Email professionnel</a></li>
+              <li><a href="contact.html#linkedin">Profil LinkedIn</a></li>
+              <li><a href="contact.html#github">Profil GitHub</a></li>
+              <li>
+                <a href="Cv_PONNU_Sivani_Sarah.pdf.pdf" target="_blank"
+                  >Télécharger le CV</a
+                >
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
+
       <div class="accessibility-tools">
         <button
           id="increase-font"

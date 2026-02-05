@@ -10,13 +10,75 @@
   <body>
     <header>
       <nav aria-label="Navigation principale">
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="apropos.html">À propos</a></li>
-          <li><a href="infos.html" class="active">Informations</a></li>
-          <li><a href="competence.html">Compétences</a></li>
-          <li><a href="projets.html">Projets</a></li>
-          <li><a href="contact.html">Contact</a></li>
+        <ul class="nav-links">
+          <li class="dropdown">
+            <a href="index.html">Accueil</a>
+            <ul class="dropdown-menu">
+              <li><a href="index.html#profil">Profil complémentaire</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="apropos.html">À propos</a>
+            <ul class="dropdown-menu">
+              <li><a href="apropos.html#presentation">À propos de moi</a></li>
+              <li>
+                <a href="apropos.html#objectif">Objectif professionnel</a>
+              </li>
+              <li>
+                <a href="apropos.html#experience">Expérience professionnelle</a>
+              </li>
+              <li><a href="apropos.html#formation">Formation</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="infos.html">Informations</a>
+            <ul class="dropdown-menu">
+              <li><a href="infos.html#langues">Langues</a></li>
+              <li><a href="infos.html#interets">Centres d’intérêt</a></li>
+              <li>
+                <a href="infos.html#qualites">Qualités professionnelles</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="competence.html">Compétences</a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="competence.html#reseaux">Administrer les réseaux</a>
+              </li>
+              <li>
+                <a href="competence.html#telecoms">Connecter les entreprises</a>
+              </li>
+              <li><a href="competence.html#dev">Créer des outils</a></li>
+              <li><a href="competence.html#securite">Sécuriser un SI</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="projets.html">Projets</a>
+            <ul class="dropdown-menu">
+              <li><a href="projets.html#mitm">Attaque MITM</a></li>
+              <li><a href="projets.html#sae21">SAE21 - Réseau complet</a></li>
+              <li>
+                <a href="projets.html#virtual-network"
+                  >Réseau virtuel & iptables</a
+                >
+              </li>
+              <li><a href="projets.html#wazuh">Monitoring Wazuh</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="contact.html">Contact</a>
+            <ul class="dropdown-menu">
+              <li><a href="contact.html#email">Email professionnel</a></li>
+              <li><a href="contact.html#linkedin">Profil LinkedIn</a></li>
+              <li><a href="contact.html#github">Profil GitHub</a></li>
+              <li>
+                <a href="Cv_PONNU_Sivani_Sarah.pdf.pdf" target="_blank"
+                  >Télécharger le CV</a
+                >
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <div class="accessibility-tools">
@@ -41,64 +103,68 @@
       <h1>Informations complémentaires</h1>
 
       <!-- Langues -->
-      <section>
-        <h2>Langues</h2>
+      <section id="langues">
+        <section>
+          <h2>Langues</h2>
 
-        <ul>
-          <li class="language-item">
-            <p><strong>Français</strong> – Langue maternelle</p>
-            <div class="level-bar">
-              <span style="width: 100%"></span>
-            </div>
-          </li>
+          <ul>
+            <li class="language-item">
+              <p><strong>Français</strong> – Langue maternelle</p>
+              <div class="level-bar">
+                <span style="width: 100%"></span>
+              </div>
+            </li>
 
-          <li class="language-item">
-            <p><strong>Tamil</strong> – Langue maternelle</p>
-            <div class="level-bar">
-              <span style="width: 100%"></span>
-            </div>
-          </li>
+            <li class="language-item">
+              <p><strong>Tamil</strong> – Langue maternelle</p>
+              <div class="level-bar">
+                <span style="width: 100%"></span>
+              </div>
+            </li>
 
-          <li class="language-item">
-            <p><strong>Anglais</strong> – B2 / C1 (avancé)</p>
-            <div class="level-bar">
-              <span style="width: 80%"></span>
-            </div>
-          </li>
+            <li class="language-item">
+              <p><strong>Anglais</strong> – B2 / C1 (avancé)</p>
+              <div class="level-bar">
+                <span style="width: 80%"></span>
+              </div>
+            </li>
 
-          <li class="language-item">
-            <p><strong>Espagnol</strong> – A2 / B1 (intermédiaire)</p>
-            <div class="level-bar">
-              <span style="width: 45%"></span>
-            </div>
-          </li>
-        </ul>
-      </section>
+            <li class="language-item">
+              <p><strong>Espagnol</strong> – A2 / B1 (intermédiaire)</p>
+              <div class="level-bar">
+                <span style="width: 45%"></span>
+              </div>
+            </li>
+          </ul>
+        </section>
 
-      <!-- Centres d'intérêt -->
-      <section>
-        <h2>Centres d’intérêt et compétences complémentaires</h2>
+        <!-- Centres d'intérêt -->
+              <section id="interets">
+        <section>
+          <h2>Centres d’intérêt et compétences complémentaires</h2>
 
-        <ul>
-          <li>
-            <strong>Modélisation 3D</strong> (SolidWorks, Fusion 360) :
-            développement de la rigueur, de la visualisation spatiale et de la
-            conception technique.
-          </li>
+          <ul>
+            <li>
+              <strong>Modélisation 3D</strong> (SolidWorks, Fusion 360) :
+              développement de la rigueur, de la visualisation spatiale et de la
+              conception technique.
+            </li>
 
-          <li>
-            <strong>Montage vidéo / photo</strong> : amélioration du sens du
-            détail, de l’organisation et de la créativité.
-          </li>
+            <li>
+              <strong>Montage vidéo / photo</strong> : amélioration du sens du
+              détail, de l’organisation et de la créativité.
+            </li>
 
-          <li>
-            <strong>Dessin</strong> : développement de la précision et de
-            l’expression visuelle.
-          </li>
-        </ul>
+            <li>
+              <strong>Dessin</strong> : développement de la précision et de
+              l’expression visuelle.
+            </li>
+          </ul>
+        </section>
       </section>
 
       <!-- Qualités -->
+      <section id="qualites">
       <section>
         <h2>Qualités professionnelles</h2>
 
@@ -128,6 +194,8 @@
           </p>
         </article>
       </section>
+      </section>
+
     </main>
 
     <footer>

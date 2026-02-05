@@ -1,6 +1,11 @@
 ﻿/* =========================
    1. BASE & VARIABLES
 ========================= */
+/* Ajoute ceci au tout début de ton fichier CSS, dans :root ou html */
+html {
+  scroll-behavior: smooth; /* Animation fluide */
+  scroll-padding-top: 100px; /* Espace pour le header fixe */
+}
 
 :root {
   --bg-main: #1a1a1a;
@@ -256,20 +261,52 @@ ul li {
 }
 
 /* =========================
-   7. RESPONSIVE
+   7. RESPONSIVE OPTIMISÉ
 ========================= */
 
 @media (max-width: 768px) {
+  header {
+    position: relative; /* Le menu ne suit plus le scroll sur mobile pour libérer l'espace */
+    padding: 10px 0;
+  }
+
   main {
-    width: 95%;
+    width: 92%;
+    padding: 20px 1em; /* On réduit le gros padding-top qui n'est plus nécessaire */
+    margin-top: 10px;
   }
 
   nav ul {
-    flex-wrap: wrap;
-    gap: 15px;
+    flex-direction: column; /* Les liens s'empilent proprement */
+    gap: 10px;
+  }
+
+  .accessibility-tools {
+    position: static; /* On remet les boutons A+ dans le flux normal */
+    transform: none;
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .cta-buttons {
+    flex-direction: column; /* Boutons l'un sur l'autre sur mobile */
+    align-items: center;
+  }
+
+  .btn {
+    width: 80%;
+    text-align: center;
+  }
+
+  /* Ajustement spécifique pour le mode "Large Font" sur mobile */
+  html.large-font main {
+    padding-top: 20px;
   }
 }
-
 /* =========================
    8. CLIGNOTANT
 ========================= */
@@ -365,4 +402,57 @@ html.large-font {
 /* Ajustement pour que le header ne cache pas le contenu zoomé */
 html.large-font main {
   padding-top: 180px;
+}
+
+/* Style du menu parent */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown {
+  position: relative;
+}
+
+/* Masquer le sous-menu par défaut */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #111; /* Fond sombre */
+  border: 1px solid var(--green);
+  min-width: 250px;
+  z-index: 1001;
+  list-style: none;
+  padding: 10px 0;
+  text-align: left;
+}
+
+/* Affichage au survol */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Liens du sous-menu */
+.dropdown-menu li a {
+  padding: 10px 20px;
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-main);
+  text-decoration: none;
+  border-bottom: 1px solid #222;
+}
+
+.dropdown-menu li a:hover {
+  background-color: var(--bg-section);
+  color: var(--green);
+}
+
+/* Ajustement pour le header fixe */
+header {
+  overflow: visible; /* Important pour voir le menu sortir du header */
 }
